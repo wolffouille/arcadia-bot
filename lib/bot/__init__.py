@@ -4,7 +4,6 @@ from datetime import datetime
 
 from discord import Intents
 from discord.ext import commands
-from dotenv import load_dotenv
 
 PREFIX = os.environ['PREFIX']
 TOKEN = os.environ['TOKEN']
