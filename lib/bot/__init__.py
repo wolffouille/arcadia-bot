@@ -6,9 +6,8 @@ from discord import Intents
 from discord.ext import commands
 from dotenv import load_dotenv
 
-load_dotenv()
-PREFIX = os.getenv('PREFIX')
-TOKEN = os.getenv('TOKEN')
+PREFIX = os.environ['PREFIX']
+TOKEN = os.environ['TOKEN']
 
 COGS = [path.split('\\')[-1][:-3].replace('./lib/cogs/','') for path in glob('./lib/cogs/*.py')]
 
